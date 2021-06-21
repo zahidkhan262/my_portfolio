@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome title -->
+    <script src="https://kit.fontawesome.com/8b6c44059c.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Viaoda+Libre&display=swap"
+        rel="stylesheet">
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+    <!-- style-link -->
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body onload="loading()">
+    <div id="loading"> 
+    </div>
+    <nav class="navbar">
+        <div class="logo"><span>P</span>ort<span>F</span>olio</div>
+        <label class="dark" id="dark_mode"></label>
+        <input type="checkbox" id="check">
+        <label for="check" class="check_btn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="navbar_item">
+            <li class="navbar_item_list"><a href="#" class="active">Home</a></li>
+            <li class="navbar_item_list"><a href="#About">About</a></li>
+            <li class="navbar_item_list"><a href="#Skills">Skills</a></li>
+            <li class="navbar_item_list"><a href="#Project">Project</a></li>
+            <li class="navbar_item_list"><a href="#contact us">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="svgimage">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
+                <path fill="#0099ff" fill-opacity="1" d="M0,192L24,208C48,224,96,256,
+                        144,266.7C192,277,240,267,288,272C336,
+                        277,384,299,432,288C480,277,528,235,576,
+                        202.7C624,171,672,149,720,144C768,139,816,
+                        149,864,165.3C912,181,960,203,1008,224C1056,
+                        245,1104,267,1152,234.7C1200,203,1248,117,1296,
+                        85.3C1344,53,1392,75,1416,85.3L1440,96L1440,0L1416,
+                        0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,
+                        0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,
+                        576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,
+                        0C96,0,48,0,24,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="hire_btn">
+            <a href="mailto:zahidkhan007860@gmail.com"><button class="hire_me">Hire Me</button></a>
+            <a href="#" download="#"><button class="hire_me">Download CV</button></a>
+        </div>
+        <div class="smedia" data-aos="zoom-in">
+            <a href="https://www.linkedin.com/in/zahid-khan-59a119147/" target="_blank"><i class="fab fa-linkedin" style="color: #0d6efd;"></i>LinkeIn</a>
+            <a href="https://github.com/zahidkhan262" target="_blank"><i class="fab fa-github" style="color: rgba(0,0,0,0.8);"></i>Github</a>
+            <a href="https://instagram.com/in/pathan262/" target="_blank"><i class="fab fa-instagram" style="color: rgba(182, 26, 26, 0.8);"></i>Instagram</a>
+            <a href="https://twitter.com/in/@zahidkhan007860/" target="_blank"><i class="fab fa-twitter" style="color: #0d6efd;"></i>Twitter</a>
+        </div>
+    </div>
+    <!-- =========================================================== -->
+    <div class="about" id="About">
+        <h1 class="head center">About</h1>
+        <div class="about_flex">
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/profile.png" alt=""></div>
+                <div class="card_name">Zahid Khan</div>
+                <div class="title">B.tech (CSE) 2020 from APJ Abdul kalam Technical University</div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card_title">
+                    <p>
+                        Hi! My name is <span>Zahid Khan</span>. I'm a self-taught <span>Front-end Developer</span> who
+                        is
+                        passionate about learning new technologies & currently
+                        I am learning ReactJs for growth my frontend skills. I'm an UI design enthusiast.
+                        I believe we never stop learning, so I work hard to expand my skill set and stay updated.
+                    </p>
+                    <div class="hobbies">
+                        <ul>
+                            <li style="color: crimson; font-size: 1.3rem;">Interested</li>
+                            <li>1. Internet Browsing</li>
+                            <li>2. Playing Mobile Game</li>
+                            <li>3. Article Writing</li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about" id="Skills">
+        <h1 class="head center">Skills</h1>
+        <div class="about_flex">
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/html.png" alt=""></div>
+                <div class="card_name">HTML</div>
+                <div class="title"><p>Html(hyper text markup language). Html describe the structure of the web page and describe how to data represent</p></div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/css.png" alt=""></div>
+                <div class="card_name">Zahid Khan</div>
+                <div class="title"><p>Css(cascading style sheet). Css make webpage layout very intractive.It is used to control the style of a web document.</p></div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/js.png" alt=""></div>
+                <div class="card_name">Zahid Khan</div>
+                <div class="title"><p>Javascript is dynamic type open-source scripting language. Js make webpage dynamic and intractive.</p></div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/react.png" alt=""></div>
+                <div class="card_name">Zahid Khan</div>
+                <div class="title"><p>React is declarative efficiency and flexible javascript library for building re-usable UI components.</p></div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-easing="ease-out-cubic">
+                <div class="card_image"><img src="/assets/python.png" alt=""></div>
+                <div class="card_name">Zahid Khan</div>
+                <div class="title"><p>Python is multi-paradigm interpreted high-level dynamic type progrmming language.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="Project">
+        <h1 class="head center">Projects</h1>
+        <div class="about_flex center">
+            <div class="card" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <a href="https://zahidkhan262.github.io/registration/"><iframe src="https://zahidkhan262.github.io/registration/" class="frame" frameborder="0"></iframe></a>
+                <div class="card_name">Registration Form</div>
+                <div class="title"><p>Based on JavaScript</p></div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <iframe src="https://zahidkhan262.github.io/animation/" class="frame" frameborder="0"></iframe>
+                <div class="card_name">Animation scene</div>
+                <div class="title"><p>Based on Html & Css</p></div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <iframe src="https://zahidkhan262.github.io/todolist/" class="frame" frameborder="0"></iframe>
+                <div class="card_name">Todo List</div>
+                <div class="title"><p>Based on React js</p></div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <iframe src="https://zahidkhan262.github.io/Quiz_Web/" class="frame" frameborder="0"></iframe>
+                <div class="card_name">Quiz Web</div>
+                <div class="title"><p>Based on Javascript</p></div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <a href="https://linktr.ee/Zahidkhan262"><iframe src="https://linktr.ee/Zahidkhan262" class="frame" frameborder="0"></iframe></a>
+                <div class="card_name">And More</div>
+                <div class="title"><p>Website Link..</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="contact us">
+        <h1 class="head center">Contact Us</h1>
+        <div class="about_flex">
+            <div class="child center" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-home"></i>
+                <div class="card_name">Location</div>
+                <div class="title"><p>Bhadohi(221401),UP, INDIA</p></div>
+            </div>
+            <div class="child center" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-envelope-open"></i>
+                <div class="card_name">Email</div>
+                <div class="title"><a href="mailto:zahidkhan262@gmail.com">zahidkhan262@gmail.com</a></div>
+            </div>
+            <div class="child center" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-phone"></i>
+                <div class="card_name">Mobile No.</div>
+                <div class="title"><a href="tel:8874262123">+918874262123</a></div>
+            </div>
+            <div class="child center" data-aos="zoom-in" data-aos-easing="ease-out-cubic">
+                <i class="fas fa-link"></i>
+                <div class="card_name">Website</div>
+                <div class="title"><a href="https://linktr.ee/Zahidkhan262">Visit..</a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="text center">
+            <p>Copyright <span>&#169</span>2021. All Rights Reserved.</p>
+        </div>
+        <a href="#"><span class="arrow">&#x2191</span></a>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- --------------------------------------------------------------- -->
+
+    <script>
+        var preloader= document.getElementById('loading');
+        function loading(){
+            preloader.style.display ='none';
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- --------------------------------------------------------------- -->
+
+
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('.navbar').addClass('sticky')
+            } else {
+                $('.navbar').removeClass('sticky')
+            }
+        })
+    </script>
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark_mode');
+        darkMode.addEventListener('click', function () {
+            darkMode.classList.toggle('act')
+            content.classList.toggle('night')
+        })
+    </script>
+</body>
+
+</html>

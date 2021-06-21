@@ -1,0 +1,400 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background: #fff;
+    animation: loading 1s linear infinite;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #0099ff, rgb(214, 21, 60));
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, rgb(214, 21, 60));
+}
+@keyframes loading{
+    0%,50%{
+        background: #111;
+    }
+    50%,100%{
+        background: #0099ff;
+    }
+}
+.main{
+    background: url(/assets/bg2.svg) no-repeat center;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+.center{
+    text-align: center;
+}
+.dark{
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background: rgba(226, 220, 220, 0.9);
+    cursor: pointer;
+    
+}
+.dark::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #111;
+    transition: .5s ease-in;
+    
+}
+.dark.act:before{
+    position: absolute;
+    transform: translateX(25px);
+    background: rgb(121, 115, 115);
+}
+.night{
+    background: #111;
+}
+.night .navbar{
+    background: black;
+}
+.night .hire_me{
+    background: #111;
+}
+.navbar{
+    z-index: 1;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #0099ff;
+    color: #fff;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #fff;
+}
+.navbar.sticky{
+    background: #111;
+}
+.logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+span{
+    color: rgb(214, 21, 60);
+    font-family: 'Viaoda Libre', cursive;
+    letter-spacing: 1px;
+}
+.navbar .navbar_item{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.navbar .navbar_item .navbar_item_list{
+    margin: 0 5px;
+}
+.navbar .navbar_item .navbar_item_list a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+}
+.navbar .navbar_item .navbar_item_list a.active,
+.navbar .navbar_item .navbar_item_list a:hover{
+    color: crimson;
+}
+.navbar .check_btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.navbar .check_btn::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: crimson;
+    top: 20px;
+    right: 48px;
+    animation: focus 1s linear infinite;
+}
+@keyframes focus{
+    0%{
+        transform: translateY(-3px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    100%{
+        transition: all 0.3s ease;
+        transform: translateY(0px);
+    }
+} 
+.hire_btn{
+    position: absolute;
+    top: 67%;
+    left: 0%;
+    transform: translate(0%, -50%);
+  
+}
+.hire_me{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid #fff;
+    outline: none;
+    background: #0099ff;
+    border-radius: 20px;
+    color: rgb(236, 234, 234);
+    font-weight: bold;
+    transition: all .2s ease-out;
+    box-shadow: rgba(205, 205, 219, 0.25) 0px 13px 7px -5px;
+}
+.hire_me:hover{
+    background: crimson;
+    box-shadow: rgba(218, 214, 214, 0.25) 0px 4px 5px;
+    
+}
+.smedia{
+    position: fixed;
+    top: 330px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+.smedia a{
+    background: transparent;
+    border: 2px solid crimson;
+    color: #111;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    border-radius: 25px 0 0 25px;
+    padding: 10px 30px 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    transform: translateX(128px);
+    transition: all 0.3s linear;
+    z-index: 999999;
+}
+.night .smedia a{
+    color: #fff;
+}
+
+.fab{
+    margin-right: 15px;
+    float: left;
+    font-size: 1.7rem;
+}
+a:hover{
+    transform: translate(0px, 0px);
+}
+/* about section */
+
+.about{
+    width: 100%;
+    height: auto;
+    background: #0099ff;
+    overflow-x: hidden;
+}
+.night .about{
+background: #111;
+}
+.head{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 80px 0 0 0;
+}
+.about_flex{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    height: auto;
+    background: #111;
+    flex: 1 2 300px;
+    margin: 20px;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 2px solid #fff;
+}
+.card_title{
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 30px 40px;
+    text-indent: 10px;
+    word-spacing: 2px;
+}
+.card_image{
+    text-align: center;
+}
+
+.card_name{
+    color: crimson;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+.card .title{
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+.hobbies{
+    float: left;
+    margin-top: 5px;
+}
+.hobbies ul li{
+    display: block;
+    list-style: none;
+    padding: 5px;
+}
+.frame{
+    height: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.about_flex{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.child{
+    height: 200px;
+    background: #111;
+    flex: 1 2 200px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+.fas{
+    font-size: 2rem;
+    padding: 10px 0;
+}
+.title a{
+    color: #fff;
+    text-decoration: none;
+}
+.title a:hover{
+    color: crimson;
+}
+.text{
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+.night .text{
+    background: #fff;
+    color: #111;
+}
+.arrow{
+    text-align: center;
+    position: fixed;
+    background: #343839;
+    width: 30px;
+    height: 40px;
+    border-radius: 2px;
+    bottom: 0px;
+    right: 20px;
+
+}
+/* ----------------Mobile---------------------- */
+@media (max-width: 908px){
+    .navbar .check_btn{
+        display: block;
+    }
+    .about_flex{
+        height: auto;
+    }
+    .main{
+        width: 100%;
+        background-size: contain;
+    }
+    .smedia a{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .hire_me{
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+    svg{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        z-index: -1;
+    }
+    .navbar .navbar_item{
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 0;
+        background: #0099ff;
+        top: 80px;
+        z-index: 10;
+        text-align: center;
+        transition: all 0.3s ease-in;
+        left: -100%;
+    }
+    .navbar .navbar_item .navbar_item_list{
+        width: 100%;
+        position: relative;
+    }
+    .navbar .navbar_item .navbar_item_list a{
+        width: 100%;
+        display: block;
+        font-size: 1rem;
+        transition: all 0.4s ease-in;
+        text-align: center;
+        color: #111;
+        margin: 0;
+    }
+    #check:checked ~ .navbar_item{
+        left: 0;
+    }
+}
