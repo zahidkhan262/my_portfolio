@@ -30,7 +30,7 @@
     }
 }
 .main{
-    background: url(/assets/bg2.svg) no-repeat center;
+    background: url(bg2.svg) no-repeat center;
     background-position: bottom;
     width: 100%;
     height: 100vh;
