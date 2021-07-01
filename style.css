@@ -180,6 +180,40 @@ span{
     box-shadow: rgba(218, 214, 214, 0.25) 0px 4px 5px;
     
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+.wave{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.5));
+}
+.wave span{
+    position: relative;
+    left: 100px;
+    top: -60px;
+    display: inline-block;
+    color: crimson;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: loading 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes loading{
+    0%{
+        transform: translateY(0%);
+        color: #48dbfb;
+    }
+    20%{
+        transform: translateY(-20%);
+    }
+    40%,100%{
+        transform: translateY(0%);
+    }
+}
 .smedia{
     position: fixed;
     top: 330px;
@@ -367,6 +401,16 @@ background: #111;
         top: 80px;
         width: 100%;
         z-index: -1;
+    }
+     .wave{
+        z-index: -1;
+        position: absolute;
+        top: 60%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+    }
+    .wave span{
+        font-size: 1.4em;
     }
     .navbar .navbar_item{
 
