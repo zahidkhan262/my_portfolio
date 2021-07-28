@@ -260,7 +260,7 @@ a:hover{
 background: #111;
 }
 .head{
-    color: #fff;
+    color: #555;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 80px 0 0 0;
@@ -314,6 +314,20 @@ background: #111;
     color: #555;
     font-size: 14px;
     padding: 5px;
+}
+.colss-4{
+    flex-basis: 45%;
+    min-width: 200px;
+    transition: all 0.2s ease;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px 0 20px;
+    margin-top: 8px;
+}
+.colss-4 iframe{
+    width: 100%;
 }
 .card{
     height: auto;
