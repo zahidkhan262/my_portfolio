@@ -303,7 +303,8 @@ background: #111;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
 }
 .colss-5 img{
-    width: 100px;
+    width: 90px;
+    height: 90px;
 }
 .colss-5 h2{
     color: crimson;
